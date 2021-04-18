@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: dwk-repo
+  namespace: flux-system
+spec:
+  interval: 10m
+  url: https://github.com/volepp/devops-with-kubernetes-2020
+  ref:
+    branch: master
