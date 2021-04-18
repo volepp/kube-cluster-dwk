@@ -1,13 +1,13 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: dwk-nats
+  name: dwk-nats-helm
   namespace: flux-system
 spec:
   interval: 10m
   chart:
     spec:
-      chart: dwk-nats
+      chart: dwk-nats-helm
       sourceRef:
         kind: HelmRepository
         name: dwk-nats-helm
